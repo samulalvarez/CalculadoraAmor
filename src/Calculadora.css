@@ -1,0 +1,270 @@
+.div-main{
+  
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  
+}
+
+.div-main1{
+  display: grid;
+  place-items: center; /* centra en ambos ejes */
+  margin: 100px;
+  margin-bottom: 0px !important;
+  
+}
+
+.calculadora-amor-text {
+    
+    
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1); /* Puedes ajustar opacidad y color */
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.calculadora-amor-header {
+    text-align: center;
+    color: white;
+    background-color: rgb(253, 136, 224) ;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.btn-calcular-calculadora{
+    background-color: #ffffff;
+}
+
+.btn-calcular-calculadora:hover{
+    background-color: #15CAFF;
+    color: white;
+    transition: ease-out 0.3s;
+    border-color: white;
+}
+
+.parejas{
+    
+    width: 100%;
+    height: auto;
+    
+    
+    font-size: xx-large;
+}
+
+.parejas-header{
+    text-align: center;
+    margin: 30px;
+}
+
+.parejas-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    
+}
+
+.label-calculadora {
+    
+    display: block;
+    margin: 15px;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.input-calculadora {
+    width: auto;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+    font-family: 'Poetsen One', sans-serif;
+}
+
+input:focus {
+    border-color: rgb(248, 122, 185);
+    outline: none;
+}
+
+.image-pareja {
+    
+    width: 100%; /* Ancho fijo para todas las imágenes */
+    height: 150px; /* Alto fijo para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que llene el contenedor sin deformarse */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); /* Sombra */
+    cursor: pointer;
+}
+
+.image-pareja:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+    transition: transform 0.3s ease; /* Transición suave */
+    
+}
+
+.pareja-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Define un máximo de 6 columnas */
+    gap: 20px; /* Espaciado entre las imágenes */
+    justify-content: center; /* Centra las columnas horizontalmente */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries */
+
+/* Pantallas grandes (mayor a 1440px) */
+@media screen and (min-width: 1440px) {
+
+    .div-main{
+        width: 50%;
+    }
+
+    .calculadora-amor-text {
+        max-width: 1000px;
+        padding: 40px;
+    }
+
+    .calculadora-amor-header {
+        height: 50px;
+        font-size: 2rem;
+    }
+
+    .btn-calcular-calculadora{
+        margin: 20px;
+        background-color: white;
+        font-size: 2rem;
+}
+
+    .btn-calcular-calculadora:hover{
+    background-color: #15CAFF;
+    color: white;
+    transition: ease-out 0.3s;
+    border-color: white;
+}
+
+    .parejas-header{
+        font-size: 4rem;
+        
+    }
+
+    .label-calculadora {
+        display: block;
+        margin: 15px;
+        font-size: 3rem;
+        color: #000000;
+    }
+
+    .input-calculadora{
+        
+        font-size: 1.5rem;
+        
+    }
+
+    .btn-calcular {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+
+    .image-pareja {
+         /* Ancho fijo para todas las imágenes */
+        height: 250px; /* Imágenes más grandes */
+    }
+}
+
+/* Pantallas medianas (entre 768px y 1200px) */
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+    .calculadora-amor-text {
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    .calculadora-amor-header {
+        font-size: 1.8rem;
+    }
+
+    .btn-calcular {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    .image-pareja {
+        height: 180px; /* Ajusta el tamaño de las imágenes */
+    }
+
+    .pareja-container {
+        grid-template-columns: repeat(4, 1fr); /* Máximo de 4 columnas */
+    }
+}
+
+/* Pantallas pequeñas (menor a 768px) */
+@media screen and (max-width: 768px) {
+
+    .div-main1{
+        width: 100%;
+        margin: auto;
+    }
+
+    .div-main{
+        
+        margin: 10%;
+    }
+
+    .calculadora-amor-text {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .calculadora-amor-header {
+        font-size: 1.5rem;
+    }
+
+    .btn-calcular {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .image-pareja {
+        height: 150px; /* Imágenes más pequeñas */
+    }
+
+    .pareja-container {
+        grid-template-columns: repeat(2, 1fr); /* Máximo de 2 columnas */
+        gap: 15px; /* Menor espacio entre imágenes */
+    }
+}

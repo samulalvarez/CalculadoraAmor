@@ -1,0 +1,174 @@
+.div-main1-resultado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* alto de pantalla completa */
+}
+
+.calculadora-amor-text-resultado {
+    width: 50%;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto; /* Centra horizontalmente */
+    
+}
+
+.h2-resultado{
+  font-size: 2rem;
+}
+
+.p-cargando{
+  font-size: 1.5rem;
+}
+
+.p-cargado{
+  font-size: 1.5rem;
+}
+
+
+.btn-calcular{
+    background-color: white;
+}
+
+.btn-calcular:hover{
+    background-color: #15CAFF;
+    color: white;
+    transition: ease-out 0.3s;
+    border-color: white;
+}
+
+
+
+
+.porcentaje{
+    font-size:xx-large ;
+    color : rgb(247, 23, 135);
+}
+
+.heartbeat {
+     animation: latido 1s infinite;
+      transform-origin: center;
+    }
+
+    @keyframes latido {
+      0%, 100% {
+        transform: scale(1);
+      }
+      14% {
+        transform: scale(1.3);
+      }
+      28% {
+        transform: scale(1);
+      }
+      42% {
+        transform: scale(1.3);
+      }
+      70% {
+        transform: scale(1);
+      }
+    }
+
+.corazon-carga {
+    width: 100%;
+}
+
+.resultado-imagen {
+  display: block;
+  margin: 20px auto;
+  max-width: 200px;
+  height: auto;
+}
+
+
+@media screen and (min-width: 1440px) {
+  .calculadora-amor-text-resultado {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .btn-calcular{
+    font-size: 2rem;
+  }
+
+  .porcentaje{
+    font-size: 3rem;
+  } 
+  
+  .h2-resultado{
+    font-size: 3rem;
+  }
+  
+  .p-cargando{
+    font-size: 2rem;
+  }
+  
+  .p-cargado{
+    font-size: 2rem;
+  }
+  
+  .resultado-imagen {
+    max-width: 250px;
+  }
+}
+
+
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+  .calculadora-amor-text-resultado {
+    width: 25%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .btn-calcular{
+    font-size: 1rem;
+  }
+
+  .porcentaje{
+    font-size: 2rem;
+  } 
+  
+  .h2-resultado{
+    font-size: 2rem;
+  }
+  
+  .p-cargando{
+    font-size: 1rem;
+  }
+  
+  .p-cargado{
+    font-size: 1rem;
+  }
+  
+  .resultado-imagen {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h2-resultado{
+  font-size: 1.5rem;
+  }
+  .p-cargando{
+    font-size: 1rem;
+  }
+  .p-cargado{
+    font-size: 1rem;
+  }
+  
+  .resultado-imagen {
+    max-width: 100px;
+  }
+}
+
+
+
+.video-personalizado{
+  width: 100%;
+  height: auto;
+  max-width: 600px; /* Ancho máximo del video */
+  margin: 0 auto; /* Centra el video horizontalmente */
+}
