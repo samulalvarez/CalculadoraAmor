@@ -5,7 +5,7 @@ import Resultado from './Resultado';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/CalculadoraAmor">
       <Routes>
         <Route path="/" element={<Calculadora />} />
         <Route path="/resultado" element={<Resultado />} />
