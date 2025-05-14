@@ -52,8 +52,8 @@ function Resultado() {
 
   // Verifica si los nombres coinciden con las condiciones específicas
   const esVideoPersonalizado =
-    (nombre1.toLowerCase() === 'pablo' || nombre1.toLowerCase() === 'rexito') &&
-    ['alis', 'aliss', 'señora salvaje', 'señorita salvaje'].includes(nombre2.toLowerCase());
+    (nombre1.toLowerCase() === 'pablo' || nombre1.toLowerCase() === 'rexito' || nombre1.toLowerCase() === 'aliss' || nombre1.toLowerCase() === 'alis') &&
+    ['alis', 'aliss', 'señora salvaje', 'señorita salvaje', 'rexito', 'pablo'].includes(nombre2.toLowerCase());
 
   return (
     <>
@@ -88,7 +88,7 @@ function Resultado() {
               <p className='porcentaje'>{porcentaje}%</p>
               <video
                 src={videoPersonalizado}
-                controls
+                loop
                 autoPlay
                 className="video-personalizado"
               ></video>
