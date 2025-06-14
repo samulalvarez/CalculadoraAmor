@@ -6,6 +6,7 @@ import pareja3 from './assets/pareja3.png';
 import pareja4 from './assets/pareja4.png';
 import pareja5 from './assets/pareja5.png';
 import pareja6 from './assets/pareja6.png';
+import pareja7 from './assets/pareja7.png';
 import rexoyaleja from './assets/rexoyaleja.png';
 import './Calculadora.css';
 
@@ -81,6 +82,7 @@ function Calculadora() {
             <img className='image-pareja' src={pareja5} alt="Pareja 5" onClick={() => abrirModal(pareja5)} />
             <img className='image-pareja' src={pareja6} alt="Pareja 6" onClick={() => abrirModal(pareja6)} />
             <img className='image-pareja' src={rexoyaleja} alt="Pareja 6" onClick={() => abrirModal(rexoyaleja)} />
+            <img className='image-pareja' src={pareja7} alt="Pareja 6" onClick={() => abrirModal(pareja7)} />
           </div>
         </section>
       </section>
